@@ -46,7 +46,7 @@ def sum_up(num1: int, num2: int):
     return sum
 
 
-# 5
+'''# 5
 def min_int(num1: int, num2: int, num3: int):
     smallest = 0
     if num1 < num2 and num1 < num3:
@@ -56,7 +56,17 @@ def min_int(num1: int, num2: int, num3: int):
     else:
         smallest = num3
     return smallest
+'''
 
+# 5
+def sequence(num:int):
+    if num >=0 and num <10:
+        for i in range(10):
+            if (i == num):
+                continue
+            print(i, end=" ")
+    else:
+        print("Number has to be from 0 to 9")
 
 # 6
 def check_string(text: str):
@@ -66,7 +76,7 @@ def check_string(text: str):
         return False
 
 
-# 7
+'''# 7
 def sum_floats(num1: float, num2: float):
     sum = 0.0
 
@@ -76,6 +86,16 @@ def sum_floats(num1: float, num2: float):
     else:
         print("Only floats allowed")
         return 0.0
+'''
+
+# 7
+def triangle(size:int):
+    for i in range(size):
+        for j in range(i):
+            print("*", end=" ")
+        print("")
+
+
 
 
 if __name__ == '__main__':
@@ -83,6 +103,6 @@ if __name__ == '__main__':
     # swap_integer()
     print(check_numbers(60, 10))
     sum_up(3, 9)
-    print(min_int(200, 700, 31000))
     print(check_string("ANT"))
-    sum_floats(1.0, 2.0)
+    sequence(7)
+    triangle(6)
